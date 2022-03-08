@@ -1,0 +1,31 @@
+<!-- <div *ngIf="animal">
+    <nb-card size="tiny">
+        <nb-card-header>
+            {{ animal.name }}
+        </nb-card-header>
+        <nb-card-body>
+           <img [src]="animal.image_link" style="height: 100%; width: auto" />
+        </nb-card-body>
+        <nb-card-footer>
+            {{ animal.animal_type }}
+        </nb-card-footer>
+    </nb-card>
+</div> -->
+
+<div class="card-row" *ngIf="animal">
+    <div class="card-col">
+        <nb-card>
+            <nb-card-header>
+                {{ animal.name }}
+            </nb-card-header>
+            <nb-card-body>
+                <img [src]="animal.image_link" style="width: 100%" />
+            </nb-card-body>
+            <nb-card-footer>
+                {{ animal.animal_type }}
+            </nb-card-footer>
+        </nb-card>
+    </div>
+    <div class="card-col">
+    </div>
+</div>
